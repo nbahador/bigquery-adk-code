@@ -1,0 +1,42 @@
+[
+    {
+        "prompt": "What are the most common outlier reasons in the insurance claims dataset?",
+        "reference": "The most common outlier reasons should include unusual diagnosis-procedure combinations, abnormally high claim amounts, and geographic coverage restrictions."
+    },
+    {
+        "prompt": "Show me claims that were flagged for unusual diagnosis-procedure combinations",
+        "reference": "These claims typically involve mismatched procedures and diagnoses, such as mental health sessions for physical conditions or emergency consults for minor issues."
+    },
+    {
+        "prompt": "What is the average claim amount for Virtual Consultation procedures that are NOT outliers?",
+        "reference": "The average should be around $150 based on the typical cost, with outliers being significantly higher (3x or more)."
+    },
+    {
+        "prompt": "Which states have the highest rate of geographic mismatch outliers?",
+        "reference": "States like WY, AK, MT should show geographic restriction outliers for virtual consultations."
+    },
+    {
+        "prompt": "Explain why claim CLM_10050 was flagged as an outlier",
+        "reference": "The explanation should reference specific business rules like unusual combinations, high amounts, or geographic issues."
+    },
+    {
+        "prompt": "How many claims require human review currently?",
+        "reference": "The count should reflect claims where review_required = true."
+    },
+    {
+        "prompt": "What percentage of Mental Health Session claims are flagged as outliers?",
+        "reference": "The percentage should be calculated from total mental health claims vs outlier mental health claims."
+    },
+    {
+        "prompt": "Show the distribution of claim amounts for outlier vs non-outlier claims",
+        "reference": "Outlier claims should show significantly higher amounts on average compared to non-outliers."
+    },
+    {
+        "prompt": "Which providers have the highest outlier rates?",
+        "reference": "The analysis should show provider names and their respective outlier percentages."
+    },
+    {
+        "prompt": "What is the mechanistic interpretability behind flagging claim CLM_10100?",
+        "reference": "The explanation should detail the specific business rules and thresholds that triggered the outlier detection."
+    }
+]
